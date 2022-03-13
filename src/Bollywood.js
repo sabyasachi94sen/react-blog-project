@@ -96,8 +96,8 @@ const Bollywood = () => {
                       {val.release}
                     </p>
                   </div>
-                </div>
-                <hr />
+                </div>'
+                <hr className="top-post-divider"/>
               </div>
             ))}
 

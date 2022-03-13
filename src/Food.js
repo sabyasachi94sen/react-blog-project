@@ -84,7 +84,7 @@ const Food = () => {
                  
                 </div>
               </div>
-              <hr />
+              <hr className="top-post-divider" />
             </div>
           ))}
 
