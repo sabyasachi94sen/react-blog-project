@@ -8,21 +8,23 @@ import "./index.css";
 
 const Article = () => {
   const [data] = useContext(ContextData);
-  const { path } = useParams();
+  var { path } = useParams();
+   path=+path;
   var categor;
   for (var i = 0; i < data.length; i++) {
-    if (data[i].id == path) {
+    if (data[i].id === path) {
       categor = data[i].category;
       break;
     }
   }
-  console.log(path);
+  console.log(typeof(path));
   console.log(categor);
+  
 
   return (
     <div>
       {data
-        .filter((value) => value.id == path)
+        .filter((value) => value.id === path)
         .map((val) => (
           <div className="article-content-wrapper">
             <h2>{val.name}</h2>
@@ -67,7 +69,7 @@ const Article = () => {
 
       <div className="article-wrapper">
         {data
-          .filter((value) => value.id != path && value.category == categor)
+          .filter((value) => value.id !== path && value.category === categor)
           .map((val) => (
             <div key={val.id} className="sports">
               <Link
