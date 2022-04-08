@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
 }
-
+/* body{
+  background-image: url('https://thumbs.dreamstime.com/b/sea-water-ocean-wave-surfing-surface-colorful-vibrant-sunset-barrel-shape-124362369.jpg');
+ 
+ background-repeat: no-repeat;
+ background-size: cover;
+  
+} */
 .responsive-menu-bar{
   width:20%;
   height:30vh;
@@ -21,6 +27,48 @@ display: none;
 
 
 
+}
+
+.home-latest-sport-stories-title{
+  text-align: center;
+   font-family: sans-serif; 
+   margin-top:1vh;
+}
+.home-latest-tech-stories-title{
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 6vh;
+  margin-bottom: 1vh;
+}
+
+.home-latest-bollywood-stories-title{
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 5vh;
+}
+.home-latest-hollywood-stories-title{
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 2vh;
+}
+.home-latest-food-stories-title{
+  
+  
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.home-latest-fitness-stories-title{
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 4vh;
+  margin-bottom: 2vh,
 }
 
 .cancel{
@@ -186,6 +234,7 @@ hr{
   word-wrap: break-word;
   margin-left: 10px;
   cursor: pointer;
+ 
 }
 .article-wrapper{
   width: 70%;
@@ -259,7 +308,9 @@ hr{
   height: 2px;
   background-color: red;
   cursor: pointer;
-}
+  position: relative; 
+  margin-top: 1rem;
+  }
 
 .bolly-stories{
   width:70%;
@@ -290,6 +341,10 @@ hr{
   padding-top: 1rem;
   
   
+}
+.bolly-image-wrapper{
+  position: relative;
+  width: 20rem;
 }
 .bolly-image{
   width:100%;
@@ -541,11 +596,25 @@ h2{
   line-height: 1rem;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1000px) and (orientation:portrait){
 
   .header{
     width:100%;
 
+  }
+  .underline{
+    top:0;
+    margin-top: 2vh;
+  }
+  .home-latest-food-stories-title{
+    margin-bottom: 0;
+    margin-top: 5vh;
+  }
+  .home-latest-hollywood-stories-title{
+    margin-top: 6vh;
+  }
+  .home-latest-fitness-stories-title{
+    margin-top: 6vh;
   }
   .navbar{
     display: none;
@@ -608,10 +677,12 @@ h2{
    width:100%;
    height: auto;
    flex-direction: column;
-   /* background-color: red; */
+   margin-top: 4vh;
+   
  }
  .sports{
    width:90%;
+   
  }
  .bolly-stories{
    width:100%;
@@ -683,12 +754,15 @@ h2{
    margin-left: 0;
  }
  .left-data-image{
-   width:100%;
+   width:85%;
 
  }
 .left-data-link{
   position: relative;
   width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* background-color: brown; */
 
 }
@@ -754,6 +828,336 @@ h2{
   width:100%;
   margin-top: 2vh;
 }
+
+
+}
+
+
+@media only screen and (max-width:1024px) and (orientation:landscape){
+
+  .header{
+    width:100%;
+    height:18vh;
+    /* background-color: yellow; */
+
+  }
+  .home-latest-sport-stories-title{
+    margin-top: 5vh;
+  }
+  .home-latest-tech-stories-title{
+    margin-top: 12vh;
+  }
+  .home-latest-bollywood-stories-title{
+    margin-top: 14vh;
+  }
+  .home-latest-hollywood-stories-title{
+    margin-top: 8vh;
+  }
+  .home-latest-fitness-stories-title{
+    margin-top: 14vh;
+  }
+  .home-latest-food-stories-title{
+    margin-top: 10vh;
+  }
+  .underline{
+    margin-top: 3vh;
+    top:0;
+    position: relative;
+  }
+  .navbar{
+    display: none;
+ 
+  }
+  .navbar-hr{
+   
+  
+    top: -10vh;
+    position: relative;
+  }
+  .menu-icon{
+    display:block;
+    width:7%;
+    height:8vh;
+    /* background-color: orange; */
+    position: absolute;
+    right:0;
+    margin-bottom: 0;
+  }
+  .title-wrapper{
+    width:50%;
+    height:20vh;
+    /* background-color: yellow; */
+  }
+  .responsive-menu-bar{
+    width:99%;
+    height:53vh;
+    display: block;
+    top:-120vh;
+    
+  }
+  .list{
+    font-size: 1.2rem;
+    /* background-color: yellow; */
+    top: 1.8vh;
+    position: relative;
+   
+  }
+  .cancel{
+    font-size: 3rem;
+    margin-top: 2vh;
+  }
+  .responsive-menu-bar-hr{
+    margin-top: 3vh;
+  }
+  .navbar-hr{
+    width:100%;
+    position: relative;
+    margin-top:-30vh;
+  }
+  .responsive-menu-bar-active{
+   top:-38.5vh;
+   transition: all 0.8s;
+   z-index: 1;
+   position: relative;
+  
+  
+ }
+ .responsive-menu-bar-disable{
+   bottom:8.5rem;
+   position: relative;
+   transition: all 0.8s;
+ }
+ .mountain-wrapper{
+   width:100%;
+   height:auto;
+   display: flex;
+   flex-direction: column;
+   /* background-color: yellow; */
+ }
+ .mountain-big{
+   width:90%;
+   height:90vh;
+   margin-top: 5vh;
+ }
+ .mountain-small-wrapper{
+   width:100%;
+   height:auto;
+   /* background-color: green; */
+  
+ }
+ .mountain-small{
+   width:60%;
+   height:60vh;
+ }
+ .article-wrapper{
+   width:100%;
+   height: auto;
+   flex-direction: column;
+   /* background-color: red; */
+ }
+ .sports{
+   width:90%;
+   height:auto;
+   margin-top: 6vh;
+   /* background-color: green; */
+ }
+ .sports-img{
+   height:60vh;
+   width:60%;
+   margin-bottom: 4vh;
+
+ }
+ .bolly-stories{
+   width:100%;
+   height:auto;
+   flex-direction: column;
+   /* background-color:aqua; */
+ }
+ .movie-container{
+   /* background-color: purple; */
+   width: 90%;
+   height:auto;
+   display:flex;
+   flex-direction: column;
+   /* margin-top: 30vh; */
+
+
+ }
+ 
+ .bolly-wrapper{
+   width: 100%;
+   height: auto;
+   flex-direction: column;
+   /* background-color: green; */
+   margin-left: 0;
+   margin-top: 35vh;
+
+ }
+ .bolly-image-wrapper{
+   width: 60%;
+  height:auto;
+  /* background-color: yellow; */
+}
+
+ .bolly-image{
+  height:60vh;
+  
+}
+
+ .movie-details{
+   /* background-color: red; */
+
+   width:100%;
+   height:auto;
+   position: relative;
+   margin-top: 4vh;
+  
+ }
+ .movie-details-para{
+   top:0;
+   height:auto;
+ }
+ .advertisement{
+   width:50%;
+   height:120vh;
+   margin-top: 20vh;
+ }
+ .wrapper{
+   width:100%;
+   height:auto;
+   /* background-color: blue; */
+   flex-direction: column;
+   position: relative;
+ }
+ .bolly-wrapper{
+   width:100%;
+   height:auto;
+   /* background-color: orange; */
+   position: relative;
+   margin-top: 5vh;
+ }
+ .left-data{
+   width:100%;
+   height:auto;
+   /* background-color: aqua; */
+
+ }
+ .movie-details-desc-para{
+   top:0;
+   left:0;
+ }
+ .movie-details-release-para{
+   top:2vh;
+   left:0;
+ }
+ .post-divider{
+   width:100%;
+   margin-left: 0;
+   margin-top: 8vh;
+ }
+ .left-data-image{
+   width:60%;
+   
+   height:80vh;
+
+ }
+.left-data-link{
+  position: relative;
+  width:100%;
+  height:auto;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.top-post-title{
+  right:0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  left:0;
+  
+
+  
+}
+.post-title{
+  left:0;
+  text-align: center;
+}
+.underline1{
+  left:0;
+  margin: auto;
+
+
+}
+.right-data{
+  width:100%;
+  height:auto;
+}
+.right-data-wrapper{
+  height:auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: yellow; */
+  margin-top: 10vh;
+ 
+ 
+}
+.right-data-link{
+  width:60%;
+  height:auto;
+}
+.top-post-image{
+  height:70vh;
+  width:65%;
+}
+
+.top-post-details{
+  top:0;
+  left:0;
+  height:auto;
+  font-size: 1rem;
+}
+.small-ad{
+  width:60%;
+  margin: auto;
+  height: 100vh;
+  margin-top: 10vh;
+}
+.top-post-underline{
+  left:0;
+  margin: auto;
+}
+.article-content-wrapper{
+  width:100%;
+}
+.article-img{
+  height:80vh;
+  width: 80%;
+}
+.avatar-wrapper{
+  margin: auto;
+  margin-top:10vh;
+}
+.top-post-divider{
+  position: relative;
+  width:100%;
+  margin-top: 2vh;
+}
+
+.rotate-wrapper{
+  height: 20vh;
+
+  
+  /* background-color: red; */
+}
+.text-rotate{
+  margin-top: -1.1vh;
+}
+
 
 
 }

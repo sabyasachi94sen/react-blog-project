@@ -12,6 +12,7 @@ import Fitness from "./Fitness.js"
 import Article from "./Article.js";
 
 
+
 // import {decrementCounter,incrementCounter} from "./Redux/Action/counterAction.js";
 // import {useDispatch,useSelector} from "react-redux";
 
@@ -27,6 +28,7 @@ import Article from "./Article.js";
 function App() {
  
   return (
+   
     <Router>
       <ProvideData>
       <Header />
@@ -43,6 +45,7 @@ function App() {
       </Routes>
       </ProvideData>
     </Router>
+
 
 
 

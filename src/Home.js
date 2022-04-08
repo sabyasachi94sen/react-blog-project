@@ -19,13 +19,7 @@ const Fitstories = () => {
   return (
     <>
       <h2
-        style={{
-          textAlign: "center",
-          fontFamily: "sans-serif",
-          position: "relative",
-          top: "1rem",
-          marginBottom: "1rem",
-        }}
+       className="home-latest-fitness-stories-title"
       >
         Latest Fitness Stories
       </h2>
@@ -77,13 +71,7 @@ const Foodstories = () => {
   return (
     <>
       <h2
-        style={{
-          textAlign: "center",
-          fontFamily: "sans-serif",
-          position: "relative",
-          top: "1rem",
-          marginBottom: "1rem",
-        }}
+       className="home-latest-food-stories-title"
       >
         Latest Food Stories
       </h2>
@@ -108,6 +96,7 @@ const Foodstories = () => {
                   color: "black",
                   top: "0.5rem",
                   position: "relative",
+                  
                 }}
               >
                 Date:
@@ -119,6 +108,7 @@ const Foodstories = () => {
                   marginLeft: "10px",
                   top: "0.5rem",
                   position: "relative",
+                
                 }}
               >
                 TODAY
@@ -137,18 +127,13 @@ const Hollystories = () => {
     <>
       <>
         <h2
-          style={{
-            textAlign: "center",
-            fontFamily: "sans-serif",
-            position: "relative",
-            top: "1rem",
-          }}
+         className="home-latest-hollywood-stories-title"
         >
           Latest Hollywood Stories
         </h2>
         <hr
           className="underline"
-          style={{ position: "relative", top: "1.2rem" }}
+          
         />
         <div className="bolly-stories">
           <div className="movie-container">
@@ -158,7 +143,7 @@ const Hollystories = () => {
                 <div key={val.id} className="bolly-wrapper">
                   <Link
                     to={`/article/${val.id}`}
-                    style={{ position: "relative", width: "20rem" }}
+                   className="bolly-image-wrapper"
                   >
                     <img src={val.image} alt="" className="bolly-image" />
                   </Link>
@@ -191,18 +176,13 @@ const Bollystories = () => {
   return (
     <>
       <h2
-        style={{
-          textAlign: "center",
-          fontFamily: "sans-serif",
-          position: "relative",
-          top: "1rem",
-        }}
+     className="home-latest-bollywood-stories-title"
       >
         Latest Bollywood Stories
       </h2>
       <hr
         className="underline"
-        style={{ position: "relative", top: "1.2rem" }}
+        
       />
       <div className="bolly-stories">
         <div className="movie-container">
@@ -212,7 +192,7 @@ const Bollystories = () => {
               <div key={val.id} className="bolly-wrapper">
                 <Link
                   to={`/article/${val.id}`}
-                  style={{ position: "relative", width: "20rem" }}
+                  className="bolly-image-wrapper"
                 >
                   <img src={val.image} alt="" className="bolly-image" />
                 </Link>
@@ -259,7 +239,7 @@ const Sportstories = () => {
   console.log(sport);
   return (
     <>
-      <h2 style={{ textAlign: "center", fontFamily: "sans-serif" }}>
+      <h2 className="home-latest-sport-stories-title">
         Latest Sports Stories
       </h2>
       <hr className="underline" />
@@ -278,7 +258,7 @@ const Sportstories = () => {
               style={{
                 fontSize: "0.8rem",
                 color: "black",
-                top: "0.5rem",
+                marginTop: "2vh",
                 position: "relative",
               }}
             >
@@ -289,7 +269,7 @@ const Sportstories = () => {
                 color: "grey",
                 fontSize: "0.6rem",
                 marginLeft: "10px",
-                top: "0.5rem",
+                marginTop: "2vh",
                 position: "relative",
               }}
             >
@@ -307,13 +287,7 @@ const Techstories = () => {
   return (
     <>
       <h2
-        style={{
-          textAlign: "center",
-          fontFamily: "sans-serif",
-          position: "relative",
-          top: "1rem",
-          marginBottom: "1rem",
-        }}
+      className="home-latest-tech-stories-title"
       >
         Latest Technology Stories
       </h2>
@@ -336,8 +310,9 @@ const Techstories = () => {
                 style={{
                   fontSize: "0.8rem",
                   color: "black",
-                  top: "0.5rem",
+                  top: "1vh",
                   position: "relative",
+          
                 }}
               >
                 Date:
@@ -347,7 +322,7 @@ const Techstories = () => {
                   color: "grey",
                   fontSize: "0.6rem",
                   marginLeft: "10px",
-                  top: "0.5rem",
+                  top: "1vh",
                   position: "relative",
                 }}
               >
