@@ -55,15 +55,15 @@ const Header=()=>{
         <p className="cancel" onClick={cancelBar}>&times;</p>
         </p>
             <hr className="responsive-menu-bar-hr" />
-            <p><Link to="/Bollywood" className="list">Bollywood</Link></p>
+            <p><Link to="/Bollywood" className="list" onClick={cancelBar}>Bollywood</Link></p>
             <hr className="responsive-menu-bar-hr" />
-            <p><Link to="/Technology" className="list">Technology</Link></p>
+            <p><Link to="/Technology" className="list" onClick={cancelBar}>Technology</Link></p>
             <hr className="responsive-menu-bar-hr" />
-            <p><Link to="/Hollywood" className="list">Hollywood</Link></p>
+            <p><Link to="/Hollywood" className="list" onClick={cancelBar}>Hollywood</Link></p>
             <hr className="responsive-menu-bar-hr" />
-            <p><Link to="/Fitness" className="list">Fitness</Link></p>
+            <p><Link to="/Fitness" className="list" onClick={cancelBar}>Fitness</Link></p>
             <hr className="responsive-menu-bar-hr" />
-            <p><Link to="/Food" className="list">Food</Link></p>
+            <p><Link to="/Food" className="list" onClick={cancelBar}>Food</Link></p>
             
             </div>
         <hr className="navbar-hr"></hr>
