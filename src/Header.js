@@ -30,12 +30,12 @@ const Header=()=>{
         </div>
         <div className="header">
             <div className="navbar">
-            <p onClick={cancelBar}><Link to="/home" className="list">Home</Link></p>
-            <p onClick={cancelBar}><Link to="/Bollywood" className="list">Bollywood</Link></p>
-            <p onClick={cancelBar}><Link to="/Technology" className="list">Technology</Link></p>
-            <p onClick={cancelBar}><Link to="/Hollywood" className="list">Hollywood</Link></p>
-            <p onClick={cancelBar}><Link to="/Fitness" className="list">Fitness</Link></p>
-            <p onClick={cancelBar}><Link to="/Food" className="list">Food</Link></p>
+            <p> <Link to="/home" className="list">Home</Link></p>
+            <p><Link to="/Bollywood" className="list">Bollywood</Link></p>
+            <p><Link to="/Technology" className="list">Technology</Link></p>
+            <p><Link to="/Hollywood" className="list">Hollywood</Link></p>
+            <p><Link to="/Fitness" className="list">Fitness</Link></p>
+            <p><Link to="/Food" className="list">Food</Link></p>
             </div>
 
             <div className="menu-icon" onClick={navBar}>
