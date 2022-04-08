@@ -51,7 +51,7 @@ const Header=()=>{
         </div>
 
         <div className="responsive-menu-bar">
-        <p><Link to="/home" className="list">Home  </Link>
+        <p><Link to="/home" className="list" onClick={cancelBar}>Home  </Link>
         <p className="cancel" onClick={cancelBar}>&times;</p>
         </p>
             <hr className="responsive-menu-bar-hr" />
